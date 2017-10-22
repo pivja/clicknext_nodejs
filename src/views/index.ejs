@@ -1,0 +1,23 @@
+<html>
+<head>
+  <%include ./partials/head %>
+</head>
+<body>
+  <%include ./partials/nav %>
+  <div class="alert alert-success">
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+  <h3>Hello <%= datas.name%></h3>
+
+  <form method="post" action="/">
+    name : <input type="text" name="name" >
+    <button type="submit">GO</button>
+  </form>
+
+  <%include ./partials/footer %>
+
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="/popper.js/dist/umd/popper.min.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

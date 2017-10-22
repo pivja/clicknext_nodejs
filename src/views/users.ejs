@@ -1,0 +1,28 @@
+<html>
+<head>
+  <%include ./partials/head %>
+</head>
+<body>
+  <%include ./partials/nav %>
+
+  <h3>Users</h3>
+  <table border="1">
+    <tr>
+      <th>id  </th>
+      <th>name</th>
+    </tr>
+    <% for(var users of datas.users){ %>
+    <tr>
+      <td><%= users.id %></td>
+      <td><%= users.name %></td>
+    </tr>
+    <% } %>
+</table>
+
+  <%include ./partials/footer %>
+
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="/popper.js/dist/umd/popper.min.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
